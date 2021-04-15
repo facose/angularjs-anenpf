@@ -1,0 +1,29 @@
+<!-- Form section -->
+<div class="card">
+  <h1>Add People</h1>
+  <form class="form">
+    <input type="text" placeholder="First Name" ng-model="addName">
+    <br><br>
+    <input type="text" placeholder="Last Name" ng-model="addLastName">
+    <br><br>
+    <button class="add" type="button" ng-click="add()">Add</button>
+  </form>
+</div>
+
+<!-- People list/table -->
+<table id="table" class="content-table">
+  <thead>
+    <tr class="table-header">
+      <th colspan="1">First Name</th>
+      <th colspan="1">Last Name</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="person in people" class="person-row">
+      <td>{{ person.name }}</td>
+      <td>{{ person.lastName }}</td>
+      <td><button class="delete" type="button" ng-click="remove($index)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>

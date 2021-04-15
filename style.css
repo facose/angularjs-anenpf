@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add form styles */
+
+h1 {
+  padding-top: 1rem;
+  text-align: center;
+  color: #e69d17;
+}
+
+.card {
+  width: 70%;
+  margin: 2rem auto;
+  background-color: #ededed;
+  border-radius: 3px;
+}
+
+.form {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+.add {
+  padding: 0.3rem 0.9rem;
+  background-color: #e69d17;
+  font-size: 1rem;
+  width: 25%;
+  margin: 0 37.5%;
+  font-weight: bold;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  outline: none;
+}
+
+/*  Add table styles */
+
+.content-table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+/* Add separation line and bold header */
+.content-table thead tr {
+  color: #e69d17;
+  font-weight: bold;
+  border-bottom: 2px solid #e69d17;
+}
+
+.content-table td,
+.content-table th {
+  padding: 5px;
+  text-align: center;
+}
+
+.delete {
+  padding: 0.3rem 0.9rem;
+  background-color: #e69d17;
+  font-size: 1rem;
+  width: 70%;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add highlight on hover */
+.person-row:hover {
+  background-color: lightgray;
+}
