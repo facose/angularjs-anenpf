@@ -41,7 +41,7 @@ h1 {
   padding: 0.3rem 0.9rem;
   background-color: #e69d17;
   font-size: 1rem;
-  width: 25%;
+  min-width: 30%;
   margin: 0 37.5%;
   font-weight: bold;
   border: none;
@@ -61,6 +61,7 @@ h1 {
 }
 
 /* Add separation line and bold header */
+
 .content-table thead tr {
   color: #e69d17;
   font-weight: bold;
@@ -77,14 +78,20 @@ h1 {
   padding: 0.3rem 0.9rem;
   background-color: #e69d17;
   font-size: 1rem;
-  width: 70%;
+  min-width: 70%;
   color: white;
   font-weight: bold;
   border: none;
   cursor: pointer;
 }
 
-/* Add highlight on hover */
+/* Hover styles for buttons and person row */
+
+.add:hover,
+.delete:hover {
+  background-color: #f69d17;
+}
+
 .person-row:hover {
   background-color: lightgray;
 }
